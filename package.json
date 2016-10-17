@@ -1,0 +1,12 @@
+{
+  "name": "scientific-name-api",
+  "version": "0.0.0",
+  "description": "scraper for animal names",
+  "main": "index.js",
+  "author": "Ivo Bathke",
+  "license": "MIT",
+  "dependencies": {
+    "nodemw": "^0.10.1",
+    "ramda": "^0.22.1"
+  }
+}

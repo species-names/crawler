@@ -1,0 +1,6 @@
+node:
+  container_name: "scientific_name_api"
+  image: kkarczmarczyk/node-yarn
+  volumes:
+    - "./:/workspace"
+#    - "~.yarn-cache:/.yarn-cache

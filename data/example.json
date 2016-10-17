@@ -1,0 +1,34 @@
+[
+    {
+        "scientific_name": "Erithacus rubecula",
+        "common_names": [
+            {
+                "lang": "de",
+                "name": "Rotkehlchen",
+                "synonyms": [
+                    "Rotkehlfink"
+                ]
+            },
+            {
+                "lang": "en",
+                "name": "European Robin",
+                "synonyms": [
+                    "Robin"
+                ]
+            },
+            {
+                "lang": "fi",
+                "name": "Punarinta"
+            }
+        ]
+    },
+    {
+        "scientific_name": "Muscicapa striata",
+        "common_names": [
+            {
+                "lang": "de",
+                "name": "Grauschnäpper"
+            }
+        ]
+    }
+]
