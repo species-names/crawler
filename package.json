@@ -1,12 +1,51 @@
 {
-  "name": "scientific-name-api",
+  "name": "species-names",
   "version": "0.0.0",
-  "description": "scraper for animal names",
-  "main": "index.js",
+  "description": "species names api",
+  "homepage": "https://github.com/ivoba/species-names",
   "author": "Ivo Bathke",
-  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "main": "index.js",
+  "keywords": [
+    ""
+  ],
+  "license": "",
   "dependencies": {
     "nodemw": "^0.10.1",
     "ramda": "^0.22.1"
+  },
+  "devDependencies": {
+    "eslint": "^3.1.1",
+    "eslint-config-xo-space": "^0.14.0",
+    "babel-eslint": "^6.1.2",
+    "eslint-plugin-babel": "^3.3.0",
+    "gulp": "^3.9.0",
+    "gulp-eslint": "^2.0.0",
+    "gulp-exclude-gitignore": "^1.0.0",
+    "gulp-line-ending-corrector": "^1.0.1",
+    "gulp-istanbul": "^1.0.0",
+    "gulp-mocha": "^2.0.0",
+    "gulp-plumber": "^1.0.0",
+    "gulp-nsp": "^2.1.0",
+    "gulp-coveralls": "^0.1.0",
+    "gulp-babel": "^6.1.2",
+    "del": "^2.0.2",
+    "babel-core": "^6.11.4",
+    "babel-register": "^6.9.0",
+    "babel-preset-es2015": "6.9.0",
+    "isparta": "^4.0.0"
+  },
+  "eslintConfig": {
+    "extends": "xo-space",
+    "env": {
+      "mocha": true
+    }
+  },
+  "repository": "git@github.com:ivoba/species-names.git",
+  "scripts": {
+    "prepublish": "gulp prepublish",
+    "test": "gulp"
   }
 }

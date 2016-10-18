@@ -11,5 +11,3 @@ Parsing:
 
 ## Todo
 - docker setup
-- linting
-- test

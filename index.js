@@ -1,23 +1,23 @@
-var bot = require('nodemw'),
-  R = require('ramda'),
-  client = new bot({
-    protocol: 'https',
-    server: 'species.wikimedia.org',
-    path: '/w',
-    userAgent: 'scientificNameBot 0.0'
-  }), params = {
-    action: 'parse',
-    page: 'Muscicapidae'
-  };
+var bot = require('nodemw');
+var R = require('ramda');
+
+var client = new bot({ /* eslint new-cap: "off" */
+  protocol: 'https',
+  server: 'species.wikimedia.org',
+  path: '/w',
+  userAgent: 'scientificNameBot 0.0'
+});
+var params = {
+  action: 'parse',
+  page: 'Muscicapidae'
+};
 
 var iterateLinks = function (params, callback) {
   client.api.call(params, function (err, info, next, data) {
     const links = getLinks(data);
     links.forEach(function (link) {
       const name = R.prop('*', link);
-      detectSpecies(params.page, name, function (species) {
-        console.log(species);
-      });
+      detectSpecies(params.page, name, getSpecie);
       const paramsLink = {
         action: 'parse',
         page: name
@@ -38,6 +38,25 @@ var detectSpecies = function (genera, link, callback) {
   if (first === genera) {
     callback(link);
   }
+};
+
+var getSpecie = function (name) {
+  const params = {
+    action: 'query',
+    titles: name,
+    prop: 'revisions',
+    rvlimit: 1,
+    rvprop: 'content'
+  };
+  console.log(name);
+  client.api.call(params, function (err, info, next, data) {
+    const text = R.path(['parse', 'text'], data);
+    console.log(text);
+  });
+};
+
+var parseText = function (text, callback) {
+
 };
 
 iterateLinks(params, iterateLinks);
