@@ -7,6 +7,6 @@ describe('accessor', function () {
 
   it('should get content from query call!', function () {
     const content = accessor.getContentFromQuery(fixture);
-    assert(true, (content.length >= 5));
+    assert.equal(true, (content.length >= 5));
   });
 });
