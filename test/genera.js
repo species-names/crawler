@@ -2,6 +2,7 @@ import assert from 'assert';
 import genera from '../lib/genera';
 import parsenames from '../lib/parsenames';
 import accessor from '../lib/accessor';
+var fs = require('fs');
 
 var fixture = require('./fixtures/species.json');
 
