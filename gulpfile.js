@@ -13,7 +13,7 @@ var coveralls = require('gulp-coveralls');
 gulp.task('static', function () {
   return gulp.src('**/*.js')
     .pipe(excludeGitignore())
-    .pipe(eslint({'indent': 2}))
+    .pipe(eslint({indent: 2}))
     .pipe(eslint.format())
     .pipe(eslint.failAfterError());
 });
