@@ -1,11 +1,10 @@
-import assert from 'assert';
-import accessor from '../lib/accessor';
+var assert = require('assert');
+var accessor = require('../lib/accessor');
 
 var fixtureSpecies = require('./fixtures/species.json');
 var fixtureGenera = require('./fixtures/genera.json');
 
 describe('accessor', function () {
-
   it('should get content from query call!', function () {
     const content = accessor.getContentFromQuery(fixtureSpecies);
     assert.equal(true, (content.length >= 5));
