@@ -1,6 +1,6 @@
 var assert = require('assert');
-var parsenames = require('../lib/parsenames');
-var accessor = require('../lib/accessor');
+var parsenames = require('../lib/crawler/parsenames');
+var accessor = require('../lib/crawler/accessor');
 
 var fixture = require('./fixtures/species.json');
 

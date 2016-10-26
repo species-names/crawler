@@ -1,5 +1,5 @@
 var assert = require('assert');
-var accessor = require('../lib/accessor');
+var accessor = require('../lib/crawler/accessor');
 
 var fixtureSpecies = require('./fixtures/species.json');
 var fixtureGenera = require('./fixtures/genera.json');

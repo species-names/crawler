@@ -1,7 +1,7 @@
 var assert = require('assert');
-var genera = require('../lib/genera');
-var parsenames = require('../lib/parsenames');
-var accessor = require('../lib/accessor');
+var genera = require('../lib/crawler/genera');
+var parsenames = require('../lib/crawler/parsenames');
+var accessor = require('../lib/crawler/accessor');
 
 var fixture = require('./fixtures/species.json');
 

@@ -1,6 +1,6 @@
 'use strict';
 var assert = require('assert');
-var species = require('../lib/species');
+var species = require('../lib/crawler/species');
 
 describe('species', function () {
   it('should detect species', function () {
