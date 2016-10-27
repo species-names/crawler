@@ -7,7 +7,7 @@ var options = {
   path: '/w',
   userAgent: 'scientificNameBot 0.0'
 };
-var title = 'Anthipes'; // Muscicapidae
+var title = 'Alethe'; // Muscicapidae
 
 var crawler = new Crawler(options);
 crawler.crawl(title);

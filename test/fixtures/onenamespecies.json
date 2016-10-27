@@ -1,0 +1,22 @@
+{
+  "continue": {
+    "rvcontinue": "20151030135448|2333634",
+    "continue": "||"
+  },
+  "query": {
+    "pages": {
+      "23655": {
+        "pageid": 23655,
+        "ns": 0,
+        "title": "Anthipes monileger",
+        "revisions": [
+          {
+            "contentformat": "text/x-wiki",
+            "contentmodel": "wikitext",
+            "*": "== Taxonavigation ==\n{{Anthipes}}\nSpecies: ''[[Anthipes monileger]]'' <br />\nSubspecies: ''[[Anthipes monileger gularis|A.&nbsp;m.&nbsp;gularis]]''&nbsp;- ''[[Anthipes monileger leucops|A.&nbsp;m.&nbsp;leucops]]''&nbsp;- ''[[Anthipes monileger monileger|A.&nbsp;m.&nbsp;monileger]]''\n\n== Name ==\n''Anthipes monileger'' ([[Hodgson]], 1845)\n\n===Synonyms===\n*''Ficedula monileger''\n\n== Reference ==\n* ''Proceedings of the Zoological Society of London'' 13 (146): 26\n\n== Vernacular names ==\n{{VN\n|en=White-gorgeted Flycatcher\n}}"
+          }
+        ]
+      }
+    }
+  }
+}
