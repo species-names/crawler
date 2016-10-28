@@ -1,6 +1,9 @@
 node:
-  container_name: "scientific_name_api"
-  image: kkarczmarczyk/node-yarn
+  container_name: "species-names"
+  build: docker
+  ports:
+    - 5000:5000
+    - 5858:5858
   volumes:
-    - "./:/workspace"
-#    - "~.yarn-cache:/.yarn-cache
+    - "./:/src"
+    - "~/.yarn-cache:/.yarn-cache"

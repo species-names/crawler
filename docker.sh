@@ -1,7 +1,7 @@
 upOption=""
 login=true
 optspec=":d"
-containerName="scientific_name_api"
+containerName="species-names"
 while getopts "$optspec" optchar; do
     case "${optchar}" in
         d)
@@ -16,7 +16,7 @@ done
 docker-compose build
 docker-compose up $upOption
 
-if [ $login = true ]; then
+#if [ $login = true ]; then
 	docker exec -it $containerName bash
 	docker-compose stop
-fi
+#fi

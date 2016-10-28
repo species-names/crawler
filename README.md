@@ -14,6 +14,13 @@ The crawler retrieves Species names from https://species.wikimedia.org.
 ### Dataset
 Species names are stored in json format in one file per genera.  
 
+
+#### Docker
+- run: docker-compose up
+- login: docker exec -it species-names bash
+
+run commands in container
+
 ## License
 
 © [Ivo Bathke]()
