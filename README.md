@@ -11,9 +11,32 @@
 ### Crawler
 The crawler retrieves Species names from https://species.wikimedia.org.
 
+familia -> genus -> species
+
+Crawling from Genus page works:
+
+    node crawler.js -p Brachypteryx
+
+Todo:
+- iterateFamilia
+https://species.wikimedia.org/w/api.php?action=query&prop=revisions&rvlimit=1&rvprop=content&titles=Muscicapidae&format=json
+
+- regex on Genera: 
+
+-familia
+ - genera.json
+  
+Cardinalidae
+  - Amaurospiza.json
+   
+
+
 ### Dataset
 Species names are stored in json format in one file per genera.  
 
+#### Todo
+- init test for client, mock client
+- json-schema
 
 #### Docker
 - run: docker-compose up
