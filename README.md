@@ -11,7 +11,10 @@
 ### Crawler
 The crawler retrieves Species names from https://species.wikimedia.org.
 
-familia -> genus -> species
+Parvordo:
+- superfamilia -> familia -> genus -> species
+- familiae incertae sedis -> genus -> species
+- genera incertae sedis -> species
 
 Crawling from Genus page works:
 
@@ -37,6 +40,7 @@ Species names are stored in json format in one file per genera.
 #### Todo
 - init test for client, mock client
 - json-schema
+- licence data-set under Creative Commons Attribution-ShareAlike License;
 
 #### Docker
 - run: docker-compose up

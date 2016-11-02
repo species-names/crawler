@@ -1,13 +1,20 @@
+#!/usr/bin/env bash
+
 upOption=""
-login=true
-optspec=":d"
-containerName="species-names"
+login=false
+optspec=":ld"
 while getopts "$optspec" optchar; do
+    case "${optchar}" in
+        l)
+             echo "->Login after start up" >&2
+             login=true
+             upOption="-d"
+            ;;
+    esac
     case "${optchar}" in
         d)
              echo "->Start up to background" >&2
              upOption="-d"
-             login=false
             ;;
     esac
 done
@@ -16,7 +23,7 @@ done
 docker-compose build
 docker-compose up $upOption
 
-#if [ $login = true ]; then
-	docker exec -it $containerName bash
-	docker-compose stop
-#fi
+if [ $login = true ]; then
+    docker exec -it species-names bash
+    docker-compose stop
+fi

@@ -2,7 +2,7 @@ var assert = require('assert');
 var accessor = require('../lib/crawler/accessor');
 
 var fixtureSpecies = require('./fixtures/species.json');
-var fixtureGenera = require('./fixtures/genera.json');
+var fixtureGenera = require('./fixtures/genus_stiphronis_parse.json');
 
 describe('accessor', function () {
   it('should get content from query call!', function () {
