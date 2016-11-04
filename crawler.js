@@ -10,8 +10,8 @@ var options = {
 };
 
 var ops = stdio.getopt({
-  page: {key: 'p', args: '*', mandatory: true, description: 'page title to start from'}
+  familia: {key: 'f', args: '*', mandatory: true, description: 'familia to start from'}
 });
 
 var crawler = new Crawler(options);
-crawler.crawl(ops.page);
+crawler.crawl(ops);

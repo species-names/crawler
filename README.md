@@ -11,6 +11,18 @@
 ### Crawler
 The crawler retrieves Species names from https://species.wikimedia.org.
 
+Regnum -> Phyla -> Subphyla -> Classes -> Ordines -> Superfamiliae 
+
+
+Classis->Ordines->Cladi->Infraordines->Parvordo->Superfamiliae->Familiae
+                    ->Genera->Superfamilia->Familiae
+                    ->Parvordo->Superfamiliae->Familiae
+                    
+Aves(Vögel)
+                    
+aves.json
+
+
 Parvordo:
 - superfamilia -> familia -> genus -> species
 - familiae incertae sedis -> genus -> species
