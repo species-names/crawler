@@ -4,6 +4,7 @@ var accessor = require('../lib/crawler/accessor');
 
 var fixture = require('./fixtures/species.json');
 var oneNameFixture = require('./fixtures/onenamespecies.json');
+var closeSpeciesFixture = require('./fixtures/closebracesspecies.json');
 
 describe('parsenames', function () {
   it('should parse names!', function () {
@@ -18,5 +19,11 @@ describe('parsenames', function () {
     const names = parsenames(text);
     assert.equal('White-gorgeted Flycatcher', names.en);
     assert.equal(1, Object.keys(names).length);
+  });
+  it('should parse names when braces close!', function () {
+    const text = accessor.getContentFromQuery(closeSpeciesFixture);
+    const names = parsenames(text);
+    assert.equal('铁爪鹀', names.zh);
+    assert.equal(55, Object.keys(names).length);
   });
 });
