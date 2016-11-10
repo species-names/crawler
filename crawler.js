@@ -10,7 +10,9 @@ var options = {
 };
 
 var ops = stdio.getopt({
-  familia: {key: 'f', args: '*', mandatory: true, description: 'familia to start from'}
+  _meta_: {minOpts: 1},
+  familia: {key: 'f', args: 1, mandatory: false, description: 'familia to start from'},
+  genus: {key: 'g', args: 1, mandatory: false, description: 'genus to start from'}
 });
 
 var crawler = new Crawler(options);

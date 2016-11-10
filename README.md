@@ -11,39 +11,13 @@
 ### Crawler
 The crawler retrieves Species names from https://species.wikimedia.org.
 
-Regnum -> Phyla -> Subphyla -> Classes -> Ordines -> Superfamiliae 
+Crawling from Genus:
 
+    node crawler.js -g Brachypteryx
 
-Classis->Ordines->Cladi->Infraordines->Parvordo->Superfamiliae->Familiae
-                    ->Genera->Superfamilia->Familiae
-                    ->Parvordo->Superfamiliae->Familiae
-                    
-Aves(Vögel)
-                    
-aves.json
+Crawling from Familia:
 
-
-Parvordo:
-- superfamilia -> familia -> genus -> species
-- familiae incertae sedis -> genus -> species
-- genera incertae sedis -> species
-
-Crawling from Genus page works:
-
-    node crawler.js -p Brachypteryx
-
-Todo:
-- iterateFamilia
-https://species.wikimedia.org/w/api.php?action=query&prop=revisions&rvlimit=1&rvprop=content&titles=Muscicapidae&format=json
-
-- regex on Genera: 
-
--familia
- - genera.json
-  
-Cardinalidae
-  - Amaurospiza.json
-   
+    node crawler.js -f Muscicapidae
 
 
 ### Dataset
