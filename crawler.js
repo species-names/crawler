@@ -11,6 +11,7 @@ var options = {
 
 var ops = stdio.getopt({
   _meta_: {minOpts: 1},
+  ordo: {key: 'o', args: 1, mandatory: false, description: 'ordo to start from'},
   familia: {key: 'f', args: 1, mandatory: false, description: 'familia to start from'},
   genus: {key: 'g', args: 1, mandatory: false, description: 'genus to start from'}
 });

@@ -19,6 +19,17 @@ Crawling from Familia:
 
     node crawler.js -f Muscicapidae
 
+parse structures:
+
+    Ordo -> Cladi -> Familia
+         -> Subordo -> Infraorides -> Suberfamilia -> Familia
+                    -> Parvordo -> Superfamilia
+                                -> Familiae incertae sedis
+                                -> Genera incertae sedis
+         -> Familia -> Subfamiliae -> Tribus -> Genera
+         -> Familiae (4 + 1†): -> Genus
+         -> Familiae (3)
+
 
 ### Dataset
 Species names are stored in json format in one file per genera.  
