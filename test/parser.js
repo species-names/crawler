@@ -12,9 +12,8 @@ describe('parser', function () {
     assert.equal('Calliope', links[3]);
     assert.equal(50, links.length);
   });
-  it.only('should parse links from familia with genus', function () {
-    const links = parser.parseLinksFromQueryData('Genus', fixtureFamilia);
-    console.log(links);
+  it('should parse links from familia with genus', function () {
+    const links = parser.parseLinksFromQueryData('Genus', fixtureFamiliaGenus);
     assert.equal('Sagittarius', links[0]);
     assert.equal(1, links.length);
   });
