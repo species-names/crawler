@@ -38,6 +38,12 @@ Species names are stored in json format in one file per genera.
 - init test for client, mock client
 - json-schema
 - licence data-set under Creative Commons Attribution-ShareAlike License;
+- synonyms: Turnix sylvaticus: 
+                  
+                  {
+                    "lang": "en",
+                    "name": "Common Buttonquail, Kurrichane Buttonquail, Small Buttonquail, Andalusian Hemipode"
+                  }
 
 #### Docker
 - run: docker-compose up
