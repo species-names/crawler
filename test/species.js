@@ -19,13 +19,13 @@ describe('species', function () {
     const isSpecie = species.detectSpecies('Genera', 'Tada influxis');
     assert.equal(false, isSpecie);
   });
-  it.only('should create object', function () {
+  it('should create object', function () {
     const text = accessor.getContentFromQuery(fixture);
     const names = parsenames(text);
     const generaObject = species.createSpeciesObject('Muscicapa caerulescens', names);
-    console.log(generaObject);
     assert.equal('Muscicapa caerulescens', generaObject.scientific_name);
     assert.equal('en', generaObject.common_names[1].lang);
     assert.equal('Askflugsnappare', generaObject.common_names[4].name);
+    assert.equal('Synonmeone', generaObject.common_names[3].synonyms[0]);
   });
 });
