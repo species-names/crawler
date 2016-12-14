@@ -1,15 +1,8 @@
 # species-names [![Build Status][travis-image]][travis-url] [![Coverage percentage][coveralls-image]][coveralls-url]
 
-***WIP***
-
-1. crawler for species names
-2. data set for species names
-3. api for species names
+crawler for species names from https://species.wikimedia.org.
 
 ## Usage
-
-### Crawler
-The crawler retrieves Species names from https://species.wikimedia.org.
 
 Crawling from Genus:
 
@@ -18,6 +11,12 @@ Crawling from Genus:
 Crawling from Familia:
 
     node crawler.js -f Muscicapidae
+
+Crawling from Ordo:
+
+    node crawler.js -o Apterygiformes
+
+### Dataset
 
 parse structures:
 
@@ -30,24 +29,16 @@ parse structures:
          -> Familiae (4 + 1†): -> Genus
          -> Familiae (3)
 
-
-### Dataset
 Species names are stored in json format in one file per genera.  
 
 #### Todo
+- dataset as submodule
+- store files in classis folder, detect classis
 - init test for client, mock client
 - json-schema
-- licence data-set under Creative Commons Attribution-ShareAlike License;
-- synonyms: Turnix sylvaticus: 
-                  
-                  {
-                    "lang": "en",
-                    "name": "Common Buttonquail, Kurrichane Buttonquail, Small Buttonquail, Andalusian Hemipode"
-                  }
 
 #### Docker
-- run: docker-compose up
-- login: docker exec -it species-names bash
+- run: ./docker.sh -l
 
 run commands in container
 
