@@ -1,4 +1,7 @@
-var Crawler = require('./lib/crawler/crawler');
+#!/usr/bin/env node
+'use strict';
+
+var Crawler = require('../lib/crawler/crawler');
 var stdio = require('stdio');
 
 var options = {
@@ -6,7 +9,7 @@ var options = {
   protocol: 'https',
   server: 'species.wikimedia.org',
   path: '/w',
-  userAgent: 'scientificNameBot 0.0'
+  userAgent: 'species-names crawler 0.0'
 };
 
 var ops = stdio.getopt({

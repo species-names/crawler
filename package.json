@@ -8,7 +8,7 @@
   "keywords": [
     ""
   ],
-  "license": "",
+  "license": "MIT",
   "dependencies": {
     "jsonfile": "^2.4.0",
     "nodemw": "^0.10.1",

@@ -24,6 +24,6 @@ docker-compose build
 docker-compose up $upOption
 
 if [ $login = true ]; then
-    docker exec -it species-names bash
+    docker exec -it species-names-crawler bash
     docker-compose stop
 fi

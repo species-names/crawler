@@ -6,15 +6,15 @@ crawler for species names from https://species.wikimedia.org.
 
 Crawling from Genus:
 
-    node crawler.js -g Brachypteryx
+    node bin/species-names-crawler -g Brachypteryx
 
 Crawling from Familia:
 
-    node crawler.js -f Muscicapidae
+    node bin/species-names-crawler -f Muscicapidae
 
 Crawling from Ordo:
 
-    node crawler.js -o Apterygiformes
+    node bin/species-names-crawler -o Apterygiformes
 
 ### Dataset
 
@@ -35,14 +35,13 @@ Species names are stored in json format in one file per genera.
 - dataset as submodule
 - store files in classis folder, detect classis
 - init test for client, mock client
-- json-schema
 
 #### Docker
 - run: ./docker.sh -l
 
 run commands in container
 
-## License
+## License MIT
 
 © [Ivo Bathke]()
 

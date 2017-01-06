@@ -1,9 +1,10 @@
-node:
-  container_name: "species-names"
-  build: docker
-  ports:
-    - 5000:5000
-    - 5858:5858
-  volumes:
-    - "./:/src"
-    - "~/.yarn-cache:/.yarn-cache"
+version: '2'
+services:
+  node:
+    container_name: "species-names-crawler"
+    hostname: species-names-crawler
+    build: docker
+    volumes:
+      - "./:/src"
+      - "~/.yarn-cache:/.yarn-cache"
+    tty: true
