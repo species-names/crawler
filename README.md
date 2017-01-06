@@ -6,15 +6,15 @@ crawler for species names from https://species.wikimedia.org.
 
 Crawling from Genus:
 
-    node bin/species-names-crawler -g Brachypteryx
+    bin/species-names-crawler -g Brachypteryx
 
 Crawling from Familia:
 
-    node bin/species-names-crawler -f Muscicapidae
+    bin/species-names-crawler -f Muscicapidae
 
 Crawling from Ordo:
 
-    node bin/species-names-crawler -o Apterygiformes
+    bin/species-names-crawler -o Apterygiformes
 
 ### Dataset
 
@@ -46,7 +46,7 @@ run commands in container
 © [Ivo Bathke]()
 
 
-[travis-image]: https://travis-ci.org/ivoba/species-names.svg?branch=master
-[travis-url]: https://travis-ci.org/ivoba/species-names
-[coveralls-image]: https://coveralls.io/repos/ivoba/species-names/badge.svg
-[coveralls-url]: https://coveralls.io/r/ivoba/species-names
+[travis-image]: https://travis-ci.org/species-names/crawler.svg?branch=master
+[travis-url]: https://travis-ci.org/species-names/crawler
+[coveralls-image]: https://coveralls.io/repos/species-names/crawler/badge.svg
+[coveralls-url]: https://coveralls.io/r/species-names/crawler
