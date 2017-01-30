@@ -13,7 +13,11 @@ var coveralls = require('gulp-coveralls');
 gulp.task('static', function () {
   return gulp.src(['**/*.js', '!node_modules/**'])
     .pipe(excludeGitignore())
-    .pipe(eslint({indent: 2}))
+    .pipe(eslint({
+      indent: 2,
+      /* eslint quote-props: "off" */
+      'no-warning-comments': false
+    }))
     .pipe(eslint.format())
     .pipe(eslint.failAfterError());
 });
