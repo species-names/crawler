@@ -35,12 +35,18 @@ parse structures:
          -> Familiae (4 + 1†): -> Genus
          -> Familiae (3)
 
+With Passeriformes its:
+Ordo -> Cladi -> Familia
+              -> Infraordines -> Parvordo -> Familiae
+
+
 Species names are stored in json format in one file per genera.  
 
 #### Todo
 - store files in classis folder, detect classis
 - init test for client, mock client
 - Chen (Animalia) is strange
+- Check if Wikidata is easier to parse: https://www.wikidata.org/wiki/Q25307
 - Disambuig can have other patterns: Archboldia_(Ptilonorhynchidae), Chloris_(Cuvier)
   actually split by space
   https://species.wikimedia.org/w/api.php?action=parse&page=Acrocephalus
