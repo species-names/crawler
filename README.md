@@ -60,6 +60,22 @@ Species names are stored in json format in one file per genera.
                 "*": "Q3216232"
             }
         ]
+- start from classis
+- start harvesting Mammals:
+  detect Classis by https://species.wikimedia.org/w/api.php?action=query&titles=Podargus&prop=templates
+  or: https://species.wikimedia.org/w/api.php?action=query&titles=Podargus&prop=links
+  https://species.wikimedia.org/w/api.php?action=parse&page=Podargus contains Links & templates
+  use: https://species.wikimedia.org/w/api.php?action=query&titles=Podargus&prop=revisions|links&rvprop=content
+  to get link list and detect main Classis from classis list
+  [Mammalia, Aves, Amphibia, Reptilia,  Cephalaspidomorphi - Chondrichthyes - Osteichthyes (except Tetrapoda]
+- Mammalia have a different structure on ordes pages than Aves
+  wich makes problems
+  parse for Overview of genera (6 + 24†)
+  see https://species.wikimedia.org/wiki/Suidae
+  see Babyrousa
+  currently we only get genera over subfamilia
+- Addax nasomasculatus redirect page ? scientific synonym or typo
+- some extinct species are parsed too, nevermind
 
 #### Docker
 - run: ./docker.sh -l
