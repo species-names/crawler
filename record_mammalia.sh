@@ -1,10 +1,73 @@
-bin/species-names-crawler -c Mammalia -f Chrysochloridae
-bin/species-names-crawler -c Mammalia -f Tenrecidae
-bin/species-names-crawler -c Mammalia -f Antilocapridae
-bin/species-names-crawler -c Mammalia -f Bovidae
--f Camelidae
-Cervidae
-Giraffidae
-Hippopotamidae
-Moschidae
-Suidae
+Familiae:
+Canidae
+Nandiniidae
+Prionodontidae
+Felidae
+Herpestidae
+Eupleridae
+Hyaenidae
+Viverridae
+Balaenidae
+Balaenopteridae
+Eschrichtiidae
+Neobalaenidae
+Delphinidae
+Iniidae
+Kogiidae
+Lipotidae
+Monodontidae
+Phocoenidae
+Physeteridae
+Platanistidae
+Pontoporiidae
+Ziphiidae
+Pteropodidae (findet nix)
+Craseonycteridae
+Emballonuridae
+Furipteridae
+Hipposideridae
+Megadermatidae
+Molossidae
+Mystacinidae
+Myzopodidae
+Natalidae
+Noctilionidae
+Nycteridae
+Phyllostomidae
+Rhinolophidae
+Rhinopomatidae
+Thyropteridae
+Vespertilionidae
+Craseonycteridae
+Hipposideridae
+Megadermatidae
+Pteropodidae
+Rhinolophidae
+Rhinopomatidae
+
+bin/species-names-crawler -c Mammalia -o Cingulata
+Afrosoricida
+Artiodactyla
+Dasyuromorphia
+Dermoptera
+Didelphimorphia
+Diprotodontia
+Erinaceomorpha
+Hyracoidea
+Lagomorpha
+Macroscelidea (problem)
+Microbiotheria
+Monotremata
+Notoryctemorphia
+Paucituberculata
+Peramelemorphia
+Perissodactyla
+Pholidota
+Pilosa
+Primates (problem)
+Proboscidea
+Rodentia
+Scandentia
+Sirenia
+Soricomorpha
+Tubulidentata

@@ -10,7 +10,7 @@ Crawling from Genus:
 
 Crawling from Familia:
 
-    bin/species-names-crawler -f Muscicapidae
+    bin/species-names-crawler -f Muscicapidae -c Aves
 
 Crawling from Ordo:
 
@@ -21,7 +21,6 @@ Crawling from Ordo:
   currently only disambiguation with (ICZN) suffix are resolved.  
   Example: https://species.wikimedia.org/wiki/Prunella_(ICZN)  
   Disambiguation with other text can only be accessed from Familiae.  
-
 ### Dataset
 
 parse structures:
@@ -42,7 +41,12 @@ Ordo -> Cladi -> Familia
 
 Species names are stored in json format in one file per genera.  
 
+## Flow
+- https://species.wikimedia.org/w/api.php?action=query&titles=Suidae&prop=revisions&rvprop=content&rvlimit=1
+- https://species.wikimedia.org/w/api.php?action=parse&page=Canis
+
 #### Todo
+- todo tesst for splast template
 - store files in classis folder, detect classis
 - init test for client, mock client
 - Chen (Animalia) is strange
