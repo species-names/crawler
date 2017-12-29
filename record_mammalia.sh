@@ -1,4 +1,5 @@
 Familiae:
+Cynodontia
 Canidae
 Nandiniidae
 Prionodontidae
@@ -22,30 +23,9 @@ Platanistidae
 Pontoporiidae
 Ziphiidae
 Pteropodidae (findet nix)
-Craseonycteridae
-Emballonuridae
-Furipteridae
-Hipposideridae
-Megadermatidae
-Molossidae
-Mystacinidae
-Myzopodidae
-Natalidae
-Noctilionidae
-Nycteridae
-Phyllostomidae
-Rhinolophidae
-Rhinopomatidae
-Thyropteridae
-Vespertilionidae
-Craseonycteridae
-Hipposideridae
-Megadermatidae
-Pteropodidae
-Rhinolophidae
-Rhinopomatidae
 
 bin/species-names-crawler -c Mammalia -o Cingulata
+Chiroptera
 Afrosoricida
 Artiodactyla
 Dasyuromorphia
