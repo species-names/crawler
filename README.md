@@ -16,12 +16,6 @@ Crawling from Ordo:
 
     bin/species-names-crawler -o Apterygiformes
 
-### Known Issues
-- Generae which need disambiguation cause some problems,
-  currently only disambiguation with (ICZN) suffix are resolved.  
-  Example: https://species.wikimedia.org/wiki/Prunella_(ICZN)  
-  Disambiguation with other text can only be accessed from Familiae.  
-
 ### Dataset
 
 parse structures:
@@ -38,9 +32,9 @@ parse structures:
 Species names are stored in json format in one file per genera.  
 
 #### Todo
+- dataset as submodule
 - store files in classis folder, detect classis
 - init test for client, mock client
-- Chen (Animalia) is strange
 
 #### Docker
 - run: ./docker.sh -l
