@@ -41,19 +41,6 @@ Species names are stored in json format in one file per genera.
 - store files in classis folder, detect classis
 - init test for client, mock client
 - Chen (Animalia) is strange
-- Disambuig can have other patterns: Archboldia_(Ptilonorhynchidae), Chloris_(Cuvier)
-  actually split by space
-  https://species.wikimedia.org/w/api.php?action=parse&page=Acrocephalus
-  "properties": [
-            {
-                "name": "disambiguation",
-                "*": ""
-            },
-            {
-                "name": "wikibase_item",
-                "*": "Q3216232"
-            }
-        ]
 
 #### Docker
 - run: ./docker.sh -l
