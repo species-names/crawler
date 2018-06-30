@@ -32,7 +32,7 @@ parse structures:
 Species names are stored in json format in one file per genera.  
 
 #### Todo
-- dataset as submodule
+- dont save emtpy genera
 - store files in classis folder, detect classis
 - init test for client, mock client
 

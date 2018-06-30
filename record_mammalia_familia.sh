@@ -30,29 +30,6 @@ do
   bin/species-names-crawler -c Mammalia -f $i
 done
 # Familiae:
-# Cynodontia
-# Canidae
-# Nandiniidae
-# Prionodontidae
-# Felidae
-# Herpestidae
-# Eupleridae
-# Hyaenidae
-# Viverridae
-# Balaenidae
-# Balaenopteridae
-# Eschrichtiidae
-# Neobalaenidae
-# Delphinidae
-# Iniidae
-# Kogiidae
-# Lipotidae
-# Monodontidae
-# Phocoenidae
-# Physeteridae
-# Platanistidae
-# Pontoporiidae
-# Ziphiidae
 # Pteropodidae (findet nix)
 #
 # bin/species-names-crawler -c Mammalia -o Cingulata
