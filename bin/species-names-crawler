@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 'use strict';
 
-var Crawler = require('../lib/crawler/crawler');
-var stdio = require('stdio');
+const Crawler = require('../lib/crawler/crawler');
+const stdio = require('stdio');
 
-var options = {
+const options = {
   /* eslint new-cap: "off" */
   protocol: 'https',
   server: 'species.wikimedia.org',
@@ -12,7 +12,7 @@ var options = {
   userAgent: 'species-names crawler 0.0'
 };
 
-var ops = stdio.getopt({
+const ops = stdio.getopt({
   _meta_: {minOpts: 1},
   classis: {key: 'c', args: 1, mandatory: true, description: 'classis'},
   ordo: {key: 'o', args: 1, mandatory: false, description: 'ordo to start from'},
@@ -20,5 +20,5 @@ var ops = stdio.getopt({
   genus: {key: 'g', args: 1, mandatory: false, description: 'genus to start from'}
 });
 
-var crawler = new Crawler(options);
+const crawler = new Crawler(options);
 crawler.crawl(ops);
