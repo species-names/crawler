@@ -6,15 +6,15 @@ crawler for species names from https://species.wikimedia.org.
 
 Crawling from Genus:
 
-    bin/species-names-crawler -g Brachypteryx
+    bin/species-names-crawler --classis=Aves -g Brachypteryx
 
 Crawling from Familia:
 
-    bin/species-names-crawler -f Muscicapidae
+    bin/species-names-crawler --classis=Aves -f Muscicapidae
 
 Crawling from Ordo:
 
-    bin/species-names-crawler -o Apterygiformes
+    bin/species-names-crawler --classis=Aves -o Apterygiformes
 
 ### Dataset
 
