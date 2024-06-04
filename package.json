@@ -1,44 +1,31 @@
 {
-  "name": "species-names",
-  "version": "0.0.0",
+  "name": "@species-names/crawler",
+  "version": "1.0.0",
   "description": "species names api",
-  "homepage": "https://github.com/ivoba/species-names",
+  "homepage": "https://github.com/species-names/crawler",
   "author": "Ivo Bathke",
-  "main": "index.js",
   "keywords": [
-    ""
+    "species",
+    "wikispecies"
   ],
   "license": "MIT",
   "dependencies": {
-    "jsonfile": "^2.4.0",
-    "nodemw": "^0.18.0",
-    "ramda": "^0.28.0",
-    "stdio": "^0.2.7"
+    "jsonfile": "^6.1.0",
+    "nodemw": "^0.21.0",
+    "ramda": "^0.30.1"
   },
   "devDependencies": {
-    "eslint": "^3.1.1",
-    "eslint-config-xo-space": "^0.33.0",
-    "gulp": "^3.9.0",
-    "gulp-coveralls": "^0.1.0",
-    "gulp-eslint": "^2.0.0",
-    "gulp-exclude-gitignore": "^1.0.0",
-    "gulp-istanbul": "^1.0.0",
-    "gulp-line-ending-corrector": "^1.0.1",
-    "gulp-mocha": "^3.0.1",
-    "gulp-nsp": "^2.1.0",
-    "gulp-plumber": "^1.0.0"
+    "mocha": "^10.4.0",
+    "prettier": "3.3.0"
   },
+  "type": "commonjs",
   "engines": {
-    "node": ">=16"
+    "node": ">=22"
   },
-  "eslintConfig": {
-    "extends": "xo-space",
-    "env": {
-      "mocha": true
-    }
-  },
-  "repository": "git@github.com:ivoba/species-names.git",
   "scripts": {
-    "test": "gulp"
-  }
+    "format": "prettier --write \"**/*.{js,ts}\"",
+    "lint": "prettier --check \"**/*.{js,ts}\"",
+    "test": "mocha"
+  },
+  "repository": "git@github.com:ivoba/species-names/crawler.git"
 }

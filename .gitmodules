@@ -1,4 +1,3 @@
-[submodule "data"]
-	path = data
-	url = https://github.com/species-names/dataset.git
-	branch = master
+[submodule "dataset"]
+	path = dataset
+	url = git@github.com:species-names/dataset.git

@@ -1,24 +1,25 @@
 #!/usr/bin/env node
-'use strict';
+"use strict";
 
-const Crawler = require('../lib/crawler/crawler');
-const stdio = require('stdio');
+const { parseArgs } = require("node:util");
+const Crawler = require("../lib/crawler/crawler.js");
 
-const options = {
-  /* eslint new-cap: "off" */
-  protocol: 'https',
-  server: 'species.wikimedia.org',
-  path: '/w',
-  userAgent: 'species-names crawler 0.0'
-};
-
-const ops = stdio.getopt({
-  _meta_: {minOpts: 1},
-  classis: {key: 'c', args: 1, mandatory: true, description: 'classis'},
-  ordo: {key: 'o', args: 1, mandatory: false, description: 'ordo to start from'},
-  familia: {key: 'f', args: 1, mandatory: false, description: 'familia to start from'},
-  genus: {key: 'g', args: 1, mandatory: false, description: 'genus to start from'}
+const ops = parseArgs({
+  options: {
+    classis: { short: "c", type: "string" },
+    ordo: { short: "o", type: "string" },
+    familia: { short: "f", type: "string" },
+    genus: { short: "g", type: "string" },
+  },
 });
 
+console.log(ops.values);
+
+const options = {
+  protocol: "https",
+  server: "species.wikimedia.org",
+  path: "/w",
+  userAgent: "species-names crawler 0.1",
+};
 const crawler = new Crawler(options);
-crawler.crawl(ops);
+crawler.crawl(ops.values);
