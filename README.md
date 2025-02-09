@@ -33,7 +33,7 @@ Species names are stored in json format in one file per genera.
 
 ### Todo v1
 - prettier
-- mocha test
+- replace mocha with node native testrunner
 - github actions
 
 #### Todo
